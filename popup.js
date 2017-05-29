@@ -436,7 +436,7 @@ $(document).ready(function () {
 		if (value == 2) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/bitcoin/");
-			x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "ten");
 			$("#seven").click(function(){
 				x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "seven");
 			});
