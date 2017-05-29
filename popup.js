@@ -438,15 +438,19 @@ $(document).ready(function () {
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/bitcoin/");
 			x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "year");
 			});
 			
@@ -455,17 +459,21 @@ $(document).ready(function () {
 			if (value == 3) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/ethereum/");
-			x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "year");
 			});
 			
@@ -476,15 +484,19 @@ $(document).ready(function () {
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/dash/");
 			x("https://graphs.coinmarketcap.com/currencies/dash/", "Dash", "seven");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/dash/", "Dash", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/dash/", "Dash", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/dash/", "Dash", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/dash/", "Dash", "year");
 			});
 			
@@ -493,17 +505,21 @@ $(document).ready(function () {
 		if (value == 5) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/litecoin/");
-			x("https://graphs.coinmarketcap.com/currencies/litecoin/", "Litecoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/litecoin/", "Litecoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/litecoin/", "Litecoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/litecoin/", "Litecoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/litecoin/", "Litecoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/litecoin/", "Litecoin", "year");
 			});
 			
@@ -512,17 +528,21 @@ $(document).ready(function () {
 		if (value == 6) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/dogecoin/");
-			x("https://graphs.coinmarketcap.com/currencies/dogecoin/", "Dogecoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/dogecoin/", "Dogecoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/dogecoin/", "Dogecoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/dogecoin/", "Dogecoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/dogecoin/", "Dogecoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/dogecoin/", "Dogecoin", "year");
 			});
 			
@@ -531,17 +551,21 @@ $(document).ready(function () {
 		if (value == 7) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/monero/");
-			x("https://graphs.coinmarketcap.com/currencies/monero/", "Monero", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/monero/", "Monero", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/monero/", "Monero", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/monero/", "Monero", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/monero/", "Monero", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/monero/", "Monero", "year");
 			});
 			
@@ -551,17 +575,21 @@ $(document).ready(function () {
 		if (value == 8) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/nem/");
-			x("https://graphs.coinmarketcap.com/currencies/nem/", "Nem", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/nem/", "Nem", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nem/", "Nem", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nem/", "Nem", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nem/", "Nem", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nem/", "Nem", "year");
 			});
 			
@@ -570,17 +598,21 @@ $(document).ready(function () {
 		if (value == 9 ) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/virtualcoin/");
-			x("https://graphs.coinmarketcap.com/currencies/virtualcoin/", "VirtualCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/virtualcoin/", "VirtualCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/virtualcoin/", "VirtualCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/virtualcoin/", "VirtualCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/virtualcoin/", "VirtualCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/virtualcoin/", "VirtualCoin", "year");
 			});
 			
@@ -589,17 +621,21 @@ $(document).ready(function () {
 		if (value == 10) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/zcash/");
-			x("https://graphs.coinmarketcap.com/currencies/zcash/", "Zcash", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/zcash/", "Zcash", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/zcash/", "Zcash", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/zcash/", "Zcash", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/zcash/", "Zcash", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/zcash/", "Zcash", "year");
 			});
 			
@@ -608,17 +644,21 @@ $(document).ready(function () {
 		if (value == 11) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/pivx/");
-			x("https://graphs.coinmarketcap.com/currencies/pivx/", "Pivx", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/pivx/", "Pivx", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/pivx/", "Pivx", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/pivx/", "Pivx", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/pivx/", "Pivx", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/pivx/", "Pivx", "year");
 			});
 			
@@ -627,17 +667,21 @@ $(document).ready(function () {
 		if (value == 12) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/decred/");
-			x("https://graphs.coinmarketcap.com/currencies/decred/", "Decred", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/decred/", "Decred", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/decred/", "Decred", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/decred/", "Decred", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/decred/", "Decred", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/decred/", "Decred", "year");
 			});
 			
@@ -646,17 +690,21 @@ $(document).ready(function () {
 		if (value == 13) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/waves/");
-			x("https://graphs.coinmarketcap.com/currencies/waves/", "Waves", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/waves/", "Waves", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/waves/", "Waves", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/waves/", "Waves", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/waves/", "Waves", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/waves/", "Waves", "year");
 			});
 			
@@ -665,17 +713,21 @@ $(document).ready(function () {
 		if (value == 14) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/ethereum-classic/");
-			x("https://graphs.coinmarketcap.com/currencies/ethereum-classic/", "Ethereum-classic", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/ethereum-classic/", "Ethereum-classic", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ethereum-classic/", "Ethereum-classic", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ethereum-classic/", "Ethereum-classic", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ethereum-classic/", "Ethereum-classic", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ethereum-classic/", "Ethereum-classic", "year");
 			});
 			
@@ -684,17 +736,21 @@ $(document).ready(function () {
 		if (value == 15) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/factom/");
-			x("https://graphs.coinmarketcap.com/currencies/factom/", "Factom", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/factom/", "Factom", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/factom/", "Factom", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/factom/", "Factom", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/factom/", "Factom", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/factom/", "Factom", "year");
 			});
 			
@@ -703,17 +759,21 @@ $(document).ready(function () {
 		if (value == 16) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/stratis/");
-			x("https://graphs.coinmarketcap.com/currencies/stratis/", "Stratis", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/stratis/", "Stratis", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/stratis/", "Stratis", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/stratis/", "Stratis", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/stratis/", "Stratis", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/stratis/", "Stratis", "year");
 			});
 			
@@ -722,17 +782,21 @@ $(document).ready(function () {
 		if (value == 17) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/steem/");
-			x("https://graphs.coinmarketcap.com/currencies/steem/", "Steem", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/steem/", "Steem", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/steem/", "Steem", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/steem/", "Steem", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/steem/", "Steem", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/steem/", "Steem", "year");
 			});
 			
@@ -741,17 +805,21 @@ $(document).ready(function () {
 		if (value == 18) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/gamecredits/");
-			x("https://graphs.coinmarketcap.com/currencies/gamecredits/", "Gamecredits", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/gamecredits/", "Gamecredits", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gamecredits/", "Gamecredits", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gamecredits/", "Gamecredits", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gamecredits/", "Gamecredits", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gamecredits/", "Gamecredits", "year");
 			});
 			
@@ -760,17 +828,21 @@ $(document).ready(function () {
 		if (value == 19) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/lisk/");
-			x("https://graphs.coinmarketcap.com/currencies/lisk/", "Lisk", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/lisk/", "Lisk", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/lisk/", "Lisk", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/lisk/", "Lisk", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/lisk/", "Lisk", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/lisk/", "Lisk", "year");
 			});
 			
@@ -779,17 +851,21 @@ $(document).ready(function () {
 		if (value == 20) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/bytecoin-bcn/");
-			x("https://graphs.coinmarketcap.com/currencies/bytecoin-bcn/", "Byte-coin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/bytecoin-bcn/", "Byte-coin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bytecoin-bcn/", "Byte-coin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bytecoin-bcn/", "Byte-coin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bytecoin-bcn/", "Byte-coin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bytecoin-bcn/", "Byte-coin", "year");
 			});
 			
@@ -798,17 +874,21 @@ $(document).ready(function () {
 		if (value == 21) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/stellar/");
-			x("https://graphs.coinmarketcap.com/currencies/stellar/", "Stellar", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/stellar/", "Stellar", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/stellar/", "Stellar", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/stellar/", "Stellar", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/stellar/", "Stellar", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/stellar/", "Stellar", "year");
 			});
 			
@@ -817,17 +897,21 @@ $(document).ready(function () {
 		if (value == 22) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/bitshares/");
-			x("https://graphs.coinmarketcap.com/currencies/bitshares/", "Bitshares", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/bitshares/", "Bitshares", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitshares/", "Bitshares", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitshares/", "Bitshares", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitshares/", "Bitshares", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitshares/", "Bitshares", "year");
 			});
 			
@@ -836,17 +920,21 @@ $(document).ready(function () {
 		if (value == 23) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/peercoin/");
-			x("https://graphs.coinmarketcap.com/currencies/peercoin/", "Peercoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/peercoin/", "Peercoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/peercoin/", "Peercoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/peercoin/", "Peercoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/peercoin/", "Peercoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/peercoin/", "Peercoin", "year");
 			});
 			
@@ -855,17 +943,21 @@ $(document).ready(function () {
 		if (value == 24) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/siacoin/");
-			x("https://graphs.coinmarketcap.com/currencies/siacoin/", "Siacoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/siacoin/", "Siacoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/siacoin/", "Siacoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/siacoin/", "Siacoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/siacoin/", "Siacoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/siacoin/", "Siacoin", "year");
 			});
 			
@@ -874,36 +966,45 @@ $(document).ready(function () {
 		if (value == 25) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/creditbit/");
-			x("https://graphs.coinmarketcap.com/currencies/creditbit/", "Creditbit", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/creditbit/", "Creditbit", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/creditbit/", "Creditbit", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/creditbit/", "Creditbit", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/creditbit/", "Creditbit", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/creditbit/", "Creditbit", "year");
 			});
+			
 			
 		}
 		
 		if (value == 26) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/emercoin/");
-			x("https://graphs.coinmarketcap.com/currencies/emercoin/", "Emercoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/emercoin/", "Emercoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/emercoin/", "Emercoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/emercoin/", "Emercoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/emercoin/", "Emercoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/emercoin/", "Emercoin", "year");
 			});
 			
@@ -912,17 +1013,21 @@ $(document).ready(function () {
 		if (value == 27) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/komodo/");
-			x("https://graphs.coinmarketcap.com/currencies/komodo/", "Komodo", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/komodo/", "Komodo", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/komodo/", "Komodo", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/komodo/", "Komodo", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/komodo/", "Komodo", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/komodo/", "Komodo", "year");
 			});
 			
@@ -931,17 +1036,21 @@ $(document).ready(function () {
 		if (value == 28) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/nxt/");
-			x("https://graphs.coinmarketcap.com/currencies/nxt/", "Nxt", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/nxt/", "Nxt", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nxt/", "Nxt", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nxt/", "Nxt", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nxt/", "Nxt", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nxt/", "Nxt", "year");
 			});
 			
@@ -950,17 +1059,21 @@ $(document).ready(function () {
 		if (value == 29) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/zcoin/");
-			x("https://graphs.coinmarketcap.com/currencies/zcoin/", "Zcoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/zcoin/", "Zcoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/zcoin/", "Zcoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/zcoin/", "Zcoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/zcoin/", "Zcoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/zcoin/", "Zcoin", "year");
 			});
 			
@@ -969,17 +1082,21 @@ $(document).ready(function () {
 		if (value == 30) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/nexus/");
-			x("https://graphs.coinmarketcap.com/currencies/nexus/", "Nexus", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/nexus/", "Nexus", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nexus/", "Nexus", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nexus/", "Nexus", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nexus/", "Nexus", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nexus/", "Nexus", "year");
 			});
 			
@@ -988,17 +1105,21 @@ $(document).ready(function () {
 		if (value == 31) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/syscoin/");
-			x("https://graphs.coinmarketcap.com/currencies/syscoin/", "Syscoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/syscoin/", "Syscoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/syscoin/", "Syscoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/syscoin/", "Syscoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/syscoin/", "Syscoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/syscoin/", "Syscoin", "year");
 			});
 			
@@ -1007,17 +1128,21 @@ $(document).ready(function () {
 		if (value == 32) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/namecoin/");
-			x("https://graphs.coinmarketcap.com/currencies/namecoin/", "Namecoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/namecoin/", "Namecoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/namecoin/", "Namecoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/namecoin/", "Namecoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/namecoin/", "Namecoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/namecoin/", "Namecoin", "year");
 			});
 			
@@ -1026,17 +1151,21 @@ $(document).ready(function () {
 		if (value == 33) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/bitcrystals/");
-			x("https://graphs.coinmarketcap.com/currencies/bitcrystals/", "Bitcrystals", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/bitcrystals/", "Bitcrystals", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcrystals/", "Bitcrystals", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcrystals/", "Bitcrystals", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcrystals/", "Bitcrystals", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcrystals/", "Bitcrystals", "year");
 			});
 			
@@ -1045,17 +1174,21 @@ $(document).ready(function () {
 		if (value == 34) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/gulden/");
-			x("https://graphs.coinmarketcap.com/currencies/gulden/", "Gulden", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/gulden/", "Gulden", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gulden/", "Gulden", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gulden/", "Gulden", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gulden/", "Gulden", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gulden/", "Gulden", "year");
 			});
 			
@@ -1064,17 +1197,21 @@ $(document).ready(function () {
 		if (value == 35) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/byteball/");
-			x("https://graphs.coinmarketcap.com/currencies/byteball/", "Byteball", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/byteball/", "Byteball", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/byteball/", "Byteball", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/byteball/", "Byteball", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/byteball/", "Byteball", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/byteball/", "Byteball", "year");
 			});
 			
@@ -1083,17 +1220,21 @@ $(document).ready(function () {
 		if (value == 36) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/shadowcash/");
-			x("https://graphs.coinmarketcap.com/currencies/shadowcash/", "Shadowcash", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/shadowcash/", "Shadowcash", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/shadowcash/", "Shadowcash", "seven");
 			});
-			$("#ten").click(function(){
+			$("#ten").click(function(){if(value == $('#myselect').val())
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/shadowcash/", "Shadowcash", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/shadowcash/", "Shadowcash", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/shadowcash/", "Shadowcash", "year");
 			});
 			
@@ -1102,17 +1243,21 @@ $(document).ready(function () {
 		if (value == 37) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/bitcoindark/");
-			x("https://graphs.coinmarketcap.com/currencies/bitcoindark/", "Bitcoindark", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/bitcoindark/", "Bitcoindark", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcoindark/", "Bitcoindark", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcoindark/", "Bitcoindark", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcoindark/", "Bitcoindark", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitcoindark/", "Bitcoindark", "year");
 			});
 			
@@ -1121,17 +1266,21 @@ $(document).ready(function () {
 		if (value == 38) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/antshares/");
-			x("https://graphs.coinmarketcap.com/currencies/antshares/", "Antshares", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/antshares/", "Antshares", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/antshares/", "Antshares", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/antshares/", "Antshares", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/antshares/", "Antshares", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/antshares/", "Antshares", "year");
 			});
 			
@@ -1140,17 +1289,21 @@ $(document).ready(function () {
 		if (value == 39) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/counterparty/");
-			x("https://graphs.coinmarketcap.com/currencies/counterparty/", "Counterparty", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/counterparty/", "Counterparty", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/counterparty/", "Counterparty", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/counterparty/", "Counterparty", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/counterparty/", "Counterparty", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/counterparty/", "Counterparty", "year");
 			});
 			
@@ -1159,17 +1312,21 @@ $(document).ready(function () {
 		if (value == 40) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/iocoin/");
-			x("https://graphs.coinmarketcap.com/currencies/iocoin/", "I/O Coin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/iocoin/", "I/O Coin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/iocoin/", "I/O Coin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/iocoin/", "I/O Coin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/iocoin/", "I/O Coin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/iocoin/", "I/O Coin", "year");
 			});
 			
@@ -1178,17 +1335,21 @@ $(document).ready(function () {
 		if (value == 41) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/potcoin/");
-			x("https://graphs.coinmarketcap.com/currencies/potcoin/", "Potcoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/potcoin/", "Potcoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/potcoin/", "Potcoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/potcoin/", "Potcoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/potcoin/", "Potcoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/potcoin/", "Potcoin", "year");
 			});
 			
@@ -1197,17 +1358,21 @@ $(document).ready(function () {
 		if (value == 42) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/ark/");
-			x("https://graphs.coinmarketcap.com/currencies/ark/", "Ark", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/ark/", "Ark", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ark/", "Ark", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ark/", "Ark", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ark/", "Ark", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ark/", "Ark", "year");
 			});
 			
@@ -1216,17 +1381,21 @@ $(document).ready(function () {
 		if (value == 43) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/rubycoin/");
-			x("https://graphs.coinmarketcap.com/currencies/rubycoin/", "Rubycoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/rubycoin/", "Rubycoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/rubycoin/", "Rubycoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/rubycoin/", "Rubycoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/rubycoin/", "Rubycoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/rubycoin/", "Rubycoin", "year");
 			});
 			
@@ -1235,17 +1404,21 @@ $(document).ready(function () {
 		if (value == 44) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/DigiByte/");
-			x("https://graphs.coinmarketcap.com/currencies/DigiByte/", "DigiByte", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/DigiByte/", "DigiByte", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/DigiByte/", "DigiByte", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/DigiByte/", "DigiByte", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/DigiByte/", "DigiByte", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/DigiByte/", "DigiByte", "year");
 			});
 			
@@ -1254,17 +1427,21 @@ $(document).ready(function () {
 		if (value == 45) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/nexium/");
-			x("https://graphs.coinmarketcap.com/currencies/nexium/", "Nexium", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/nexium/", "Nexium", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nexium/", "Nexium", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nexium/", "Nexium", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nexium/", "Nexium", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nexium/", "Nexium", "year");
 			});
 			
@@ -1273,17 +1450,21 @@ $(document).ready(function () {
 		if (value == 46) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/blackcoin/");
-			x("https://graphs.coinmarketcap.com/currencies/blackcoin/", "BlackCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/blackcoin/", "BlackCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/blackcoin/", "BlackCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/blackcoin/", "BlackCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/blackcoin/", "BlackCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/blackcoin/", "BlackCoin", "year");
 			});
 			
@@ -1292,17 +1473,21 @@ $(document).ready(function () {
 		if (value == 47) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/nav-coin/");
-			x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "year");
 			});
 			
@@ -1311,17 +1496,21 @@ $(document).ready(function () {
 		if (value == 48) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/nav-coin/");
-			x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/nav-coin/", "NavCoin", "year");
 			});
 			
@@ -1330,17 +1519,21 @@ $(document).ready(function () {
 		if (value == 49) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/ubiq/");
-			x("https://graphs.coinmarketcap.com/currencies/ubiq/", "Ubiq", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/ubiq/", "Ubiq", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ubiq/", "Ubiq", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ubiq/", "Ubiq", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ubiq/", "Ubiq", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ubiq/", "Ubiq", "year");
 			});
 			
@@ -1349,17 +1542,21 @@ $(document).ready(function () {
 		if (value == 50) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/ybcoin/");
-			x("https://graphs.coinmarketcap.com/currencies/ybcoin/", "YbCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/ybcoin/", "YbCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ybcoin/", "YbCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ybcoin/", "YbCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ybcoin/", "YbCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ybcoin/", "YbCoin", "year");
 			});
 			
@@ -1368,17 +1565,21 @@ $(document).ready(function () {
 		if (value == 51) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/bitbay/");
-			x("https://graphs.coinmarketcap.com/currencies/bitbay/", "BitBay", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/bitbay/", "BitBay", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitbay/", "BitBay", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitbay/", "BitBay", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitbay/", "BitBay", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/bitbay/", "BitBay", "year");
 			});
 			
@@ -1387,17 +1588,21 @@ $(document).ready(function () {
 		if (value == 52) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/arcticcoin/");
-			x("https://graphs.coinmarketcap.com/currencies/arcticcoin/", "ArticCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/arcticcoin/", "ArticCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/arcticcoin/", "ArticCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/arcticcoin/", "ArticCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/arcticcoin/", "ArticCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/arcticcoin/", "ArticCoin", "year");
 			});
 			
@@ -1406,17 +1611,21 @@ $(document).ready(function () {
 		if (value == 53) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/gridcoin/");
-			x("https://graphs.coinmarketcap.com/currencies/gridcoin/", "GridCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/gridcoin/", "GridCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gridcoin/", "GridCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gridcoin/", "GridCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gridcoin/", "GridCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/gridcoin/", "GridCoin", "year");
 			});
 			
@@ -1425,17 +1634,21 @@ $(document).ready(function () {
 		if (value == 54) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/novacoin/");
-			x("https://graphs.coinmarketcap.com/currencies/novacoin/", "NovaCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/novacoin/", "NovaCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/novacoin/", "NovaCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/novacoin/", "NovaCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/novacoin/", "NovaCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/novacoin/", "NovaCoin", "year");
 			});
 			
@@ -1444,17 +1657,21 @@ $(document).ready(function () {
 		if (value == 55) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/viacoin/");
-			x("https://graphs.coinmarketcap.com/currencies/viacoin/", "ViaCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/viacoin/", "ViaCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/viacoin/", "ViaCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/viacoin/", "ViaCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/viacoin/", "ViaCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/viacoin/", "ViaCoin", "year");
 			});
 			
@@ -1463,17 +1680,21 @@ $(document).ready(function () {
 		if (value == 56) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/library-credit/");
-			x("https://graphs.coinmarketcap.com/currencies/library-credit/", "Library-Credit", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/library-credit/", "Library-Credit", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/library-credit/", "Library-Credit", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/library-credit/", "Library-Credit", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/library-credit/", "Library-Credit", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/library-credit/", "Library-Credit", "year");
 			});
 			
@@ -1482,17 +1703,21 @@ $(document).ready(function () {
 		if (value == 57) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/golem-network-tokens/");
-			x("https://graphs.coinmarketcap.com/currencies/golem-network-tokens/", "Golem", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/golem-network-tokens/", "Golem", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/golem-network-tokens/", "Golem", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/golem-network-tokens/", "Golem", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/golem-network-tokens/", "Golem", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/golem-network-tokens/", "Golem", "year");
 			});
 			
@@ -1501,17 +1726,21 @@ $(document).ready(function () {
 		if (value == 58) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/rlc/");
-			x("https://graphs.coinmarketcap.com/currencies/rlc/", "iEx.ec", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/rlc/", "iEx.ec", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/rlc/", "iEx.ec", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/rlc/", "iEx.ec", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/rlc/", "iEx.ec", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/rlc/", "iEx.ec", "year");
 			});
 			
@@ -1520,17 +1749,21 @@ $(document).ready(function () {
 			if (value == 59) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/trust/");
-			x("https://graphs.coinmarketcap.com/currencies/trust/", "TrustCoin", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/trust/", "TrustCoin", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/trust/", "TrustCoin", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/trust/", "TrustCoin", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/trust/", "TrustCoin", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/trust/", "TrustCoin", "year");
 			});
 			
@@ -1539,17 +1772,21 @@ $(document).ready(function () {
 			if (value == 60) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/tokencard/");
-			x("https://graphs.coinmarketcap.com/currencies/tokencard/", "TokenCard", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/tokencard/", "TokenCard", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/tokencard/", "TokenCard", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/tokencard/", "TokenCard", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/tokencard/", "TokenCard", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/tokencard/", "TokenCard", "year");
 			});
 			
@@ -1558,17 +1795,21 @@ $(document).ready(function () {
 			if (value == 61) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/wings/");
-			x("https://graphs.coinmarketcap.com/currencies/wings/", "Wings", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/wings/", "Wings", "ten");
 			$("#seven").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/wings/", "Wings", "seven");
 			});
 			$("#ten").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/wings/", "Wings", "ten");
 			});
 			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/wings/", "Wings", "thirty");
 			});
 			$("#year").click(function(){
+				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/wings/", "Wings", "year");
 			});
 			
@@ -1576,7 +1817,7 @@ $(document).ready(function () {
 		
 		if (value == 62) {
 			$("#lineChart").show();
-			x("https://graphs.coinmarketcap.com/currencies/monero/", "Monero");
+			x("https://graphs.coinmarketcap.com/currencies/monero/", "Monero", "ten");
 		}
 		
 		if (value == 63) {
