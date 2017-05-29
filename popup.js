@@ -413,7 +413,7 @@ $(document).ready(function () {
 		if (value == 1) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/ripple/");
-			x("https://graphs.coinmarketcap.com/currencies/ripple/", "Ripple", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/ripple/", "Ripple", "ten");
 			$("#seven").click(function(){
 				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/ripple/", "Ripple", "seven");
