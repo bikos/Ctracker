@@ -268,32 +268,25 @@ function drawChart(locations, toData, currency) {
 				, "xAxisName": "Day"
 				, "yAxisName": Sidecaption
 				, "numberPrefix": denomination
-				, "paletteColors": "#0075c2"
-				, "bgColor": "#ffffff"
-				, "showBorder": "0"
-				, "showCanvasBorder": "0"
-				, "plotBorderAlpha": "10"
-				, "usePlotGradientColor": "0"
-				, "plotFillAlpha": "50"
-				, "showXAxisLine": "1"
-				, "axisLineAlpha": "25"
-				, "divLineAlpha": "10"
-				, "showValues": "1"
-				, "showAlternateHGridColor": "0"
-				, "captionFontSize": "14"
-				, "subcaptionFontSize": "14"
-				, "subcaptionFontBold": "0"
-				, "toolTipColor": "#ffffff"
-				, "toolTipBorderThickness": "0"
-				, "toolTipBgColor": "#000000"
-				, "toolTipBgAlpha": "80"
-				, "toolTipBorderRadius": "2"
-				, "toolTipPadding": "5", //Anchor Cosmetics
-				"anchorRadius": "4"
-				, "anchorBorderThickness": "2"
-				, "anchorBorderColor": "#127fcb"
-				, "anchorSides": "1"
-				, "anchorBgColor": "#d3f7ff"
+				, "showalternatehgridcolor": "0",
+				"plotbordercolor": "008ee4",
+				"plotborderthickness": "3",
+				"showvalues": "0",
+				"divlinecolor": "CCCCCC",
+				"showcanvasborder": "0",
+				"tooltipbgcolor": "00396d",
+				"tooltipcolor": "FFFFFF",
+				"tooltipbordercolor": "00396d",
+				"numdivlines": "2",
+				"yaxisvaluespadding": "20",
+				"anchorbgcolor": "008ee4",
+				"anchorborderthickness": "0",
+				"showshadow": "0",
+				"anchorradius": "4",
+				"chartrightmargin": "25",
+				"canvasborderalpha": "0",
+				"showborder": "0",
+				"baseFontSize": "8.5"
 			, },
 
 			"data": [{
