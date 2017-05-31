@@ -158,12 +158,17 @@ function drawChart(locations, toData, currency) {
 		  "July", "August", "September", "October", "November", "December"
 		];
 	}
+	
+	if(toData.length == 30)
+	{
+	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	}
 	// subcaptions
 	
 	// prepare data
 	
 	// pass values to graph
-	if(toData.length == 7 || 10){
+	if(toData.length == 7 || toData.length == 10){
 	$(locations).insertFusionCharts({
 		type: 'area2d'
 		, width: '750'
@@ -176,32 +181,25 @@ function drawChart(locations, toData, currency) {
 				, "xAxisName": "Day"
 				, "yAxisName": Sidecaption
 				, "numberPrefix": denomination
-				, "paletteColors": "#0075c2"
-				, "bgColor": "#ffffff"
-				, "showBorder": "0"
-				, "showCanvasBorder": "0"
-				, "plotBorderAlpha": "10"
-				, "usePlotGradientColor": "0"
-				, "plotFillAlpha": "50"
-				, "showXAxisLine": "1"
-				, "axisLineAlpha": "25"
-				, "divLineAlpha": "10"
-				, "showValues": "1"
-				, "showAlternateHGridColor": "0"
-				, "captionFontSize": "14"
-				, "subcaptionFontSize": "14"
-				, "subcaptionFontBold": "0"
-				, "toolTipColor": "#ffffff"
-				, "toolTipBorderThickness": "0"
-				, "toolTipBgColor": "#000000"
-				, "toolTipBgAlpha": "80"
-				, "toolTipBorderRadius": "2"
-				, "toolTipPadding": "5", //Anchor Cosmetics
-				"anchorRadius": "4"
-				, "anchorBorderThickness": "2"
-				, "anchorBorderColor": "#127fcb"
-				, "anchorSides": "1"
-				, "anchorBgColor": "#d3f7ff"
+				, "showalternatehgridcolor": "0",
+				"plotbordercolor": "008ee4",
+				"plotborderthickness": "3",
+				"showvalues": "1",
+				"divlinecolor": "CCCCCC",
+				"showcanvasborder": "0",
+				"tooltipbgcolor": "00396d",
+				"tooltipcolor": "FFFFFF",
+				"tooltipbordercolor": "00396d",
+				"numdivlines": "2",
+				"yaxisvaluespadding": "20",
+				"anchorbgcolor": "008ee4",
+				"anchorborderthickness": "0",
+				"showshadow": "0",
+				"anchorradius": "4",
+				"chartrightmargin": "25",
+				"canvasborderalpha": "0",
+				"showborder": "0",
+				"baseFontSize": "8.5"
 			, },
 
 			"data": [{
@@ -345,7 +343,152 @@ function drawChart(locations, toData, currency) {
 	
 	}
 	
+if(toData.length == 30){
+	$(locations).insertFusionCharts({
+		type: 'area2d'
+		, width: '750'
+		, height: '300'
+		, dataFormat: 'json'
+		, dataSource: {
+			"chart": {
+				"caption": captionForChart
+				, "subCaption": "Past 30 Days"
+				, "xAxisName": "Day"
+				, "yAxisName": Sidecaption
+				, "numberPrefix": denomination
+				, "showalternatehgridcolor": "0",
+				"plotbordercolor": "008ee4",
+				"plotborderthickness": "3",
+				"showvalues": "0",
+				"divlinecolor": "CCCCCC",
+				"showcanvasborder": "0",
+				"tooltipbgcolor": "00396d",
+				"tooltipcolor": "FFFFFF",
+				"tooltipbordercolor": "00396d",
+				"numdivlines": "2",
+				"yaxisvaluespadding": "20",
+				"anchorbgcolor": "008ee4",
+				"anchorborderthickness": "0",
+				"showshadow": "0",
+				"anchorradius": "4",
+				"chartrightmargin": "25",
+				"canvasborderalpha": "0",
+				"showborder": "0",
+				"baseFontSize": "8.5"
+			, },
 
+			"data": [{
+				"label": days[DateArray[0]]
+				, "value": AdjustedPrice[0]
+									}, {
+				"label": days[DateArray[1]]
+				, "value": AdjustedPrice[1]
+									}, {
+				"label": days[DateArray[2]]
+				, "value": AdjustedPrice[2]
+									}, {
+				"label": days[DateArray[3]]
+				, "value": AdjustedPrice[3]
+									}, {
+				"label": days[DateArray[4]]
+				, "value": AdjustedPrice[4]
+									}, {
+				"label": days[DateArray[5]]
+				, "value": AdjustedPrice[5]
+									}, {
+				"label": days[DateArray[6]]
+				, "value": AdjustedPrice[6]
+									}, {
+				"label": days[DateArray[7]]
+				, "value": AdjustedPrice[7]
+									}, {
+				"label": days[DateArray[8]]
+				, "value": AdjustedPrice[8]
+									}, {
+				"label": days[DateArray[9]]
+				, "value": AdjustedPrice[9]
+									}, {
+				"label": days[DateArray[10]]
+				, "value": AdjustedPrice[10]
+									}, {
+				"label": days[DateArray[11]]
+				, "value": AdjustedPrice[11]
+									}, {
+				"label": days[DateArray[12]]
+				, "value": AdjustedPrice[12]
+									}, {
+				"label": days[DateArray[13]]
+				, "value": AdjustedPrice[13]
+									}, {
+				"label": days[DateArray[14]]
+				, "value": AdjustedPrice[14]
+									}, {
+				"label": days[DateArray[15]]
+				, "value": AdjustedPrice[15]
+									}, {
+				"label": days[DateArray[16]]
+				, "value": AdjustedPrice[16]
+									}, {
+				"label": days[DateArray[17]]
+				, "value": AdjustedPrice[17]
+									}, {
+				"label": days[DateArray[18]]
+				, "value": AdjustedPrice[18]
+									}, {
+				"label": days[DateArray[19]]
+				, "value": AdjustedPrice[19]
+									}, {
+				"label": days[DateArray[20]]
+				, "value": AdjustedPrice[20]
+									}, {
+				"label": days[DateArray[21]]
+				, "value": AdjustedPrice[21]
+									}, {
+				"label": days[DateArray[22]]
+				, "value": AdjustedPrice[22]
+									}, {
+				"label": days[DateArray[23]]
+				, "value": AdjustedPrice[23]
+									}, {
+				"label": days[DateArray[24]]
+				, "value": AdjustedPrice[24]
+									}, {
+				"label": days[DateArray[25]]
+				, "value": AdjustedPrice[25]
+									}, {
+				"label": days[DateArray[26]]
+				, "value": AdjustedPrice[26]
+									}, {
+				"label": days[DateArray[27]]
+				, "value": AdjustedPrice[27]
+									}, {
+				"label": days[DateArray[28]]
+				, "value": AdjustedPrice[28]
+									}, {
+				"label": days[DateArray[29]]
+				, "value": AdjustedPrice[29]
+									}, {
+				"label": days[DateArray[30]]
+				, "value": AdjustedPrice[30]
+									}],
+
+			"trendlines": [
+				{
+					"line": [
+						{
+							"startvalue": avg
+							, "color": "#1aaf5d"
+							, "displayvalue": "average"
+							, "valueOnTop": "1"
+							, "thickness": "2"
+                }
+            ]
+					}
+									]
+		}
+	});
+	
+	}
 
 
 };
