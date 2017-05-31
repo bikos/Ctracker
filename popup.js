@@ -270,8 +270,8 @@ function drawChart(locations, toData, currency) {
 				, "numberPrefix": denomination
 				, "showalternatehgridcolor": "0",
 				"plotbordercolor": "008ee4",
-				"plotborderthickness": "3",
-				"showvalues": "0",
+				"plotborderthickness": "1",
+				"showvalues": "1",
 				"divlinecolor": "CCCCCC",
 				"showcanvasborder": "0",
 				"tooltipbgcolor": "00396d",
