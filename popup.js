@@ -59,9 +59,9 @@ function x(fetchUrl, currency, timeVal) {
 }
 
 
+// used for average green line on charts
+
 function average(elem) {
-
-
 	var sum = 0;
 	for (var i = 0; i < elem.length; i++) {
 		sum += parseFloat(elem[i], 10);
@@ -71,12 +71,15 @@ function average(elem) {
 
 }
 
-
+// takes the divId, and data and name of the currency to be displayed on the graph
+// this funciton later calls fusion charts according to the date range selected
 function drawChart(locations, toData, currency) {
 	var DateArray = [];
 	var AdjustedPrice = [];
 	var smallestSize = false;
-	console.log("length" + toData.length);
+	
+	
+	// sanitazation of data, parsing the data into x and y axis for charts
 	if(toData.length == 7 || toData.length == 10){
 	for (i = 0; i < toData.length; i++) {
 		var d = new Date(parseInt(toData[i][0]));
@@ -91,8 +94,7 @@ function drawChart(locations, toData, currency) {
 		var month = d.getMonth();
 		DateArray.push(month);
 	}
-	console.log(DateArray);
-	console.log("blab lbal");
+	
 		
 	}
 	else{
@@ -147,7 +149,7 @@ function drawChart(locations, toData, currency) {
 	
 	
 	var d = new Date();
-	
+	// preapring the labels for different data range
 	if(toData.length == 7 || toData.length == 10)
 	{
 	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -163,11 +165,7 @@ function drawChart(locations, toData, currency) {
 	{
 	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 	}
-	// subcaptions
 	
-	// prepare data
-	
-	// pass values to graph
 	if(toData.length == 7 || toData.length == 10){
 	$(locations).insertFusionCharts({
 		type: 'area2d'
@@ -183,7 +181,7 @@ function drawChart(locations, toData, currency) {
 				, "numberPrefix": denomination
 				, "showalternatehgridcolor": "0",
 				"plotbordercolor": "008ee4",
-				"plotborderthickness": "3",
+				"plotborderthickness": "1",
 				"showvalues": "1",
 				"divlinecolor": "CCCCCC",
 				"showcanvasborder": "0",
@@ -263,7 +261,7 @@ function drawChart(locations, toData, currency) {
 			"chart": {
 				"caption": captionForChart
 				, "subCaption": "Past 12 Months"
-				, "xAxisName": "Day"
+				, "xAxisName": "Month"
 				, "yAxisName": Sidecaption
 				, "numberPrefix": denomination
 				, "showalternatehgridcolor": "0",
@@ -358,7 +356,7 @@ if(toData.length == 30){
 				, "numberPrefix": denomination
 				, "showalternatehgridcolor": "0",
 				"plotbordercolor": "008ee4",
-				"plotborderthickness": "3",
+				"plotborderthickness": "1",
 				"showvalues": "0",
 				"divlinecolor": "CCCCCC",
 				"showcanvasborder": "0",
@@ -509,21 +507,21 @@ function fetchValues(fetchUrl) {
 		$("#hourChange").html("<span style=\"color:red\">" + (oneHour) + " %</span>");
 		}
 		else{
-			$("#hourChange").html((oneHour) + " %");
+			$("#hourChange").html("<span style=\"color:green\">" + (oneHour) + " %</span>");
 		}
 		
 		if(parseFloat(twentyFourHour) < 0){
 		$("#dayChage").html("<span style=\"color:red\">" + (twentyFourHour) + " %</span>");
 		}
 		else{
-			$("#dayChage").html((twentyFourHour) + " %");
+			$("#dayChage").html("<span style=\"color:green\">" + (twentyFourHour) + " %</span>");
 		}
 		
 		if(parseFloat(sevenDays) < 0){
 		$("#monthChange").html("<span style=\"color:red\">" + (sevenDays) + " %</span>");
 		}
 		else{
-			$("#monthChange").html((sevenDays) + " %");
+			$("#monthChange").html("<span style=\"color:green\">" + (sevenDays) + " %</span>");
 		}
 		
 	}).fail(function (response) {
@@ -618,7 +616,7 @@ $(document).ready(function () {
 		if (value == 4) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/dash/");
-			x("https://graphs.coinmarketcap.com/currencies/dash/", "Dash", "seven");
+			x("https://graphs.coinmarketcap.com/currencies/dash/", "Dash", "ten");
 			$("#seven").click(function(){
 				if(value == $('#myselect').val())
 				x("https://graphs.coinmarketcap.com/currencies/dash/", "Dash", "seven");
