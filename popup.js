@@ -9,12 +9,6 @@ _gaq.push(['_trackPageview']);
 })();
 
 // add coins here, with exact number from popup.html list with exact string from ajax urls
-var coins = {
-	1: 'ripple',
-	2: 'bitcoin',
-	3: 'ether'
-}
-
 
 function drawValues(value){
 	$("#lineChart").show();
