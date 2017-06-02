@@ -19,7 +19,7 @@ function drawValues(value){
 	var dataString = "https://graphs.coinmarketcap.com/currencies/"+val+"/";
 	var chartString = val.charAt(0).toUpperCase() + val.slice(1);
 			fetchValues(tickerString);
-			x(dataString, "Ripple", "ten");
+			x(dataString, chartString, "ten");
 			$("#seven").click(function(){
 				if(value == $('#myselect').val())
 				x(dataString, chartString, "seven");
@@ -36,7 +36,8 @@ function drawValues(value){
 				if(value == $('#myselect').val())
 				x(dataString, chartString, "year");
 			});
-			console.log("this fired");
+			
+			
 }
 
 function x(fetchUrl, currency, timeVal) {
