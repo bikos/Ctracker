@@ -8,6 +8,42 @@ _gaq.push(['_trackPageview']);
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
+// add coins here, with exact number from popup.html list with exact string from ajax urls
+var coins = {
+	1: 'ripple',
+	2: 'bitcoin',
+	3: 'ether'
+}
+
+
+function drawValues(value){
+	$("#lineChart").show();
+	
+	var val = coins[value];
+	
+	var tickerString = "https://api.coinmarketcap.com/v1/ticker/"+val+"/";
+	var dataString = "https://graphs.coinmarketcap.com/currencies/"+val+"/";
+	var chartString = val.charAt(0).toUpperCase() + val.slice(1);
+			fetchValues(tickerString);
+			x(dataString, "Ripple", "ten");
+			$("#seven").click(function(){
+				if(value == $('#myselect').val())
+				x(dataString, chartString, "seven");
+			});
+			$("#ten").click(function(){
+				if(value == $('#myselect').val())
+				x(dataString, chartString, "ten");
+			});
+			$("#thirty").click(function(){
+				if(value == $('#myselect').val())
+				x(dataString, chartString, "thirty");
+			});
+			$("#year").click(function(){
+				if(value == $('#myselect').val())
+				x(dataString, chartString, "year");
+			});
+			console.log("this fired");
+}
 
 function x(fetchUrl, currency, timeVal) {
 	$.ajax({
@@ -543,76 +579,18 @@ $(document).ready(function () {
 		//var value = $(this).val();
 		
 		var value =$('#myselect').val();
+		drawValues(value);
+		
+		// some-code here, that will take the value, checks from the list of mappings.
+		// like 1:ripple, 2:bitcoin and then pass those strings to the end of two api calls..
+		// https://api.coinmarketcap.com/v1/ticker/ and https://graphs.coinmarketcap.com/currencies/ripple
+		// shouldn't take much time.. but once we fix that, all the codes below will be uselesss and can be called with only one function. 
+		
+		
+		
+		
 
-		if (value == 1) {
-			$("#lineChart").show();
-			fetchValues("https://api.coinmarketcap.com/v1/ticker/ripple/");
-			x("https://graphs.coinmarketcap.com/currencies/ripple/", "Ripple", "ten");
-			$("#seven").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/ripple/", "Ripple", "seven");
-			});
-			$("#ten").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/ripple/", "Ripple", "ten");
-			});
-			$("#thirty").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/ripple/", "Ripple", "thirty");
-			});
-			$("#year").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/ripple/", "Ripple", "year");
-			});
-			
-		}
-
-		if (value == 2) {
-			$("#lineChart").show();
-			fetchValues("https://api.coinmarketcap.com/v1/ticker/bitcoin/");
-			x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "ten");
-			$("#seven").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "seven");
-			});
-			$("#ten").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "ten");
-			});
-			$("#thirty").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "thirty");
-			});
-			$("#year").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/bitcoin/", "Bitcoin", "year");
-			});
-			
-		}
-
-			if (value == 3) {
-			$("#lineChart").show();
-			fetchValues("https://api.coinmarketcap.com/v1/ticker/ethereum/");
-			x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "ten");
-			$("#seven").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "seven");
-			});
-			$("#ten").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "ten");
-			});
-			$("#thirty").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "thirty");
-			});
-			$("#year").click(function(){
-				if(value == $('#myselect').val())
-				x("https://graphs.coinmarketcap.com/currencies/ethereum/", "Ethereum", "year");
-			});
-			
-		}
-
+	
 		if (value == 4) {
 			$("#lineChart").show();
 			fetchValues("https://api.coinmarketcap.com/v1/ticker/dash/");
@@ -1951,7 +1929,7 @@ $(document).ready(function () {
 		
 		if (value == 62) {
 			$("#lineChart").show();
-			x("https://graphs.coinmarketcap.com/currencies/monero/", "Monero", "ten");
+			x("https://graphs.coinmarketcap.com/currencies/siacoin/", "Monero", "ten");
 		}
 		
 		if (value == 63) {
