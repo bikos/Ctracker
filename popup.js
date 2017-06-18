@@ -13,13 +13,17 @@ _gaq.push(['_trackPageview']);
 function drawValues(value){
 	$("#lineChart").show();
 	
+	
 	var val = coins[value];
 	
 	var tickerString = "https://api.coinmarketcap.com/v1/ticker/"+val+"/";
 	var dataString = "https://graphs.coinmarketcap.com/currencies/"+val+"/";
 	var chartString = val.charAt(0).toUpperCase() + val.slice(1);
 			fetchValues(tickerString);
-			x(dataString, chartString, "ten");
+			$("#valueTable").show();
+			$("#lineChart").hide();
+			tableFill(dataString, chartString, "testFirst");
+			
 			$("#seven").click(function(){
 				if(value == $('#myselect').val())
 				x(dataString, chartString, "seven");
@@ -36,9 +40,68 @@ function drawValues(value){
 				if(value == $('#myselect').val())
 				x(dataString, chartString, "year");
 			});
+			$("#showDetail").click(function(){
+				$("#valueTable").show();
+				$("#lineChart").hide();
+				
+			});
 			
 			
 }
+
+function tableFill(fetchUrl, currency, timeVal) {
+	$.ajax({
+		type: "GET"
+		, url: fetchUrl
+	}).done(function (response) {
+		//console.dir(response);
+		var lastItem = response.price_usd.length;
+		var time = response.price_usd[lastItem - 1][0];
+		var dollar = response.price_usd[lastItem - 1][1];
+		var d = new Date();
+		
+		
+		if(timeVal == "ten"){
+			var toData = response.price_usd.slice(-10);
+		}
+		else if(timeVal == "seven"){
+			var toData = response.price_usd.slice(-7);
+			
+		}
+		else if(timeVal == "thirty"){
+			var toData = response.price_usd.slice(-30);
+		}
+		else{
+			var toData = response.price_usd.slice(-361);
+			
+			var tempVal = [];
+			for (var i = 1; i < toData.length; i++){
+				if(i%30==0){
+					//console.log(i);
+					//console.log(toData[i]);
+					tempVal.push(toData[i]);
+				}
+			}
+			toData = tempVal;
+			
+			
+			
+		}
+		
+		
+		$("#usdPrice").html((dollar).toFixed(7) + " dollars");
+		$("#time").html("<b>Time: </b>" + d);
+		
+		$("#tableButton").show();
+		
+	}).fail(function (response) {
+		alert("FAILURE: " + response);
+		//("#lineChart");
+	});
+}
+
+
+
 
 function x(fetchUrl, currency, timeVal) {
 	$.ajax({
@@ -82,7 +145,11 @@ function x(fetchUrl, currency, timeVal) {
 		
 		$("#usdPrice").html((dollar).toFixed(7) + " dollars");
 		$("#time").html("<b>Time: </b>" + d);
+		
+		if(timeVal !="testFirst"){
 		drawChart("#lineChart", toData, currency);
+		}
+		
 	}).fail(function (response) {
 		alert("FAILURE: " + response);
 		//("#lineChart");
@@ -108,6 +175,8 @@ function drawChart(locations, toData, currency) {
 	var DateArray = [];
 	var AdjustedPrice = [];
 	var smallestSize = false;
+	$('#valueTable').hide();
+	$("#lineChart").show();
 	
 	
 	// sanitazation of data, parsing the data into x and y axis for charts
@@ -200,8 +269,8 @@ function drawChart(locations, toData, currency) {
 	if(toData.length == 7 || toData.length == 10){
 	$(locations).insertFusionCharts({
 		type: 'area2d'
-		, width: '750'
-		, height: '300'
+		, width: '625'
+		, height: '250'
 		, dataFormat: 'json'
 		, dataSource: {
 			"chart": {
@@ -285,8 +354,8 @@ function drawChart(locations, toData, currency) {
 	if(toData.length == 12){
 	$(locations).insertFusionCharts({
 		type: 'area2d'
-		, width: '750'
-		, height: '300'
+		, width: '625'
+		, height: '250'
 		, dataFormat: 'json'
 		, dataSource: {
 			"chart": {
@@ -375,8 +444,8 @@ function drawChart(locations, toData, currency) {
 if(toData.length == 30){
 	$(locations).insertFusionCharts({
 		type: 'area2d'
-		, width: '750'
-		, height: '300'
+		, width: '650'
+		, height: '250'
 		, dataFormat: 'json'
 		, dataSource: {
 			"chart": {
@@ -521,6 +590,9 @@ if(toData.length == 30){
 
 
 };
+
+
+
 
 function fetchValues(fetchUrl) {
 	$.ajax({

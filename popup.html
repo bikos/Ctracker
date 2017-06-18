@@ -10,12 +10,13 @@
 <script src="fusioncharts.js"></script>
 <script src="fusioncharts-jquery-plugin.js"></script>
 </head>
-<body  style="height:400px; width:750px">
+<body  style="height:400px; width:780px">
 <div>
 	<h1>Crypto Currency Tracker</h1>
-	<p>Please select the currency type from the drop down below</p>
 	
-	<div align=center>
+	
+	<div style="width: 20%; float:left">
+		<p>Select Currency:</p>
 			<select id="myselect">
 				<option selected="" disabled="">Select option</option>
 				<option value="1">Ripple</option>
@@ -79,11 +80,31 @@
 				<option value="59"> Trustcoin</option>
 				<option value="60"> Token</option>
 				<option value="61"> Wings</option>
+				<option value="62"> Pink Coin</option>
+				<option value="63"> Ardor</option>
+				<option value="64"> StorjX</option>
+				<option value="65"> Verge</option>
+				<option value="66"> DigitalNote</option>
+				<option value="67"> BasicAttentionToken</option>
+				<option value="69"> Myriad</option>
+				<option value="70"> Florin</option>
+				<option value="71"> DracoToken</option>
+				<option value="72"> SingularDtv</option>
+				<option value="73"> ReddCoin</option>
+				<option value="74"> MaidSafeCoin</option>
+				<option value="75"> PrimeCoin</option>
+
 				
 
 		</select>
 		<br><br>
-		<div id="tableButton">
+		
+		
+	<br><br>
+	
+		</div>
+	
+	<div id="tableButton" style="width: 80%; float:right">
 		<table id="valueTable">
 		<tr>
 		<th>USD Price</th>
@@ -104,20 +125,21 @@
 		
 
 	<!--	<button id="seven">Seven Days</button> -->
+		<div align="center">
 		<button class="button" id="ten">Ten Days</button>
 		<button class="button" id="thirty">Thirty Days</button>
 		<button class="button" id="year">Year</button>
-		
-
+		<button class ="button" id="showDetail">Details</button>
 		</div>
-		
-	<br><br>
-	<div id="lineChart"></div>
+		<br>
+		<div id="lineChart"></div>
+		<p>For feature request,comments or bugs: Fact0reallc@gmail.com &copy;Fact0reallc, 2017,</p>
 		</div>
+	
 	
 	
 </div>
 
-	<p>For feature request,comments or bugs: Fact0reallc@gmail.com &copy;Fact0reallc, 2017,</p>
+>
 </body>
 </html>

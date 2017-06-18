@@ -61,5 +61,20 @@ coins = {
 	59: 'trust',
 	60:  'tokencard',
 	61:  'wings',
-				
+	62:   'pinkcoin',
+	63: 'ardor',
+	64: 'storjcoin-x',
+	65: 'verge',
+	66: 'digitalNote',
+	67: 'basic-attention-token',
+	68: 'blackcoin',
+	69: 'myriad',
+	70: 'florincoin',
+	71: 'dt-token',
+	72: 'singulardtv',
+	73: 'reddcoin',
+	74: 'maidsafecoin',
+	75: 'primecoin',
+	76: ''
+					
 } 
