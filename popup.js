@@ -10,11 +10,14 @@ _gaq.push(['_trackPageview']);
 
 // add coins here, with exact number from popup.html list with exact string from ajax urls
 
+var globalCoins = [];
+var globalMenu = [];
+
 function drawValues(value){
 	$("#lineChart").show();
 	
 	
-	var val = coins[value];
+	var val = globalCoins[value];
 	
 	var tickerString = "https://api.coinmarketcap.com/v1/ticker/"+val+"/";
 	var dataString = "https://graphs.coinmarketcap.com/currencies/"+val+"/";
@@ -202,8 +205,8 @@ function drawChart(locations, toData, currency) {
 	}
 
 	for (i = 0; i < toData.length; i++) {
-		if (toData[i][1] < 0.0009) {
-			var d = (toData[i][1] * 1000000).toFixed(8);
+		if (toData[i][1] < 0.000001) {
+			var d = (toData[i][1] * 1000000).toFixed(5);
 			AdjustedPrice.push(d);
 			smallestSize = true;
 		}
@@ -214,7 +217,7 @@ function drawChart(locations, toData, currency) {
 		//} 
 		else {
 
-			var d = (toData[i][1]).toFixed(3);
+			var d = (toData[i][1]).toFixed(5);
 			AdjustedPrice.push(d);
 		}
 
@@ -225,7 +228,7 @@ function drawChart(locations, toData, currency) {
 	captionForChart = currency + " Trend";
 	var Sidecaption = "";
 	var denomination = "";
-	if (toData[0][1] < 0.0009) {
+	if (toData[0][1] < 0.000001) {
 		Sidecaption = currency + " in MicroDollar";
 		denomination = "u$";
 		avg = average(AdjustedPrice);
@@ -256,8 +259,8 @@ function drawChart(locations, toData, currency) {
 	}
 	
 	if(toData.length ==12){
-		var days = ["January", "February", "March", "April", "May", "June",
-		  "July", "August", "September", "October", "November", "December"
+		var days = ["Jan", "Feb", "Mar", "Apr", "May", "June",
+		  "July", "Aug", "Sept", "Oct", "Nov", "Dec"
 		];
 	}
 	
@@ -354,7 +357,7 @@ function drawChart(locations, toData, currency) {
 	if(toData.length == 12){
 	$(locations).insertFusionCharts({
 		type: 'area2d'
-		, width: '625'
+		, width: '650'
 		, height: '250'
 		, dataFormat: 'json'
 		, dataSource: {
@@ -592,7 +595,30 @@ if(toData.length == 30){
 };
 
 
-
+function fetchNameDropDowns(){
+	$.ajax({
+		type: "GET",
+		url: "https://files.coinmarketcap.com/generated/search/quick_search.json"
+	}).done(function(response){
+		for(var i = 0; i < response.length ; i++){
+			globalCoins.push(response[i].slug);
+			globalMenu.push(response[i].name);
+		}
+		
+		
+		
+		var option = '';
+	for (var i=0;i<globalMenu.length;i++){
+	option += '<option value="'+ i + '">' + globalMenu[i] + '</option>';
+	}
+	
+	$('#myselect').append(option);
+	}).fail(function (response) {
+		alert("FAILURE: " + response);
+		});
+	
+	
+}
 
 function fetchValues(fetchUrl) {
 	$.ajax({
@@ -635,11 +661,22 @@ function fetchValues(fetchUrl) {
 
 $(document).ready(function () {
 
-	
+	fetchNameDropDowns();
 	$("#lineChart").hide();
 	$('#myselect').select2();
 	$("#tableButton").hide();
 	
+	$('#btc').click(function() {
+	$('#walletAddress').html('1A5XgYvDpAetcPuzntAdn2HqNawF8Yv4FH');
+	});
+	
+	$('#eth').click(function() {
+    $('#walletAddress').html('0x82e2e8AD9cc390569d8a37362fF4f3fd6e1DD79a');
+	});
+	
+	$('#ethc').click(function() {
+    $('#walletAddress').html('0x059a7c2c5ccfea77d5d5f9ac229da4c86910a6cd');
+	});
 	
 	
 	jQuery('#myselect').on('change', (function () {

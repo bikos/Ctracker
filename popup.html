@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="coins.js"></script>
+
 <link rel="stylesheet" type="text/css" href="pageStyle.css">
 <script src="jq.js"></script>
 <link href="select2.min.css" rel="stylesheet"/>
@@ -10,99 +10,18 @@
 <script src="fusioncharts.js"></script>
 <script src="fusioncharts-jquery-plugin.js"></script>
 </head>
-<body  style="height:400px; width:780px">
+<body  style="height:420px; width:770px">
 <div>
 	<h1>Crypto Currency Tracker</h1>
-	
-	
 	<div style="width: 20%; float:left">
-		<p>Select Currency:</p>
-			<select id="myselect">
+		<h4>Select Currency:</h4>
+			<select id="myselect" style="width: 100%">
 				<option selected="" disabled="">Select option</option>
-				<option value="1">Ripple</option>
-				<option value="2">Bitcoin</option>
-				<option value="3">Ether</option>
-				<option value="4">Dash</option>
-				<option value="5">LiteCoin</option>
-				<option value="6">DogeCoin</option>
-				<option value="7">Monero</option>
-				<option value="8"> NEM </option>
-				<option value="9"> VirtualCoin	  </option>
-				<option value="10"> Zcash	 </option>
-				<option value="11"> PIVX </option>
-				<option value="12"> Decred  </option>
-				<option value="13"> Waves </option>
-				<option value="14">Ethereum Classis</option>
-				<option value="15">  Factom </option>
-				<option value="16"> Stratis  </option>
-				<option value="17">  Steem </option>
-				<option value="18">GameCredits  </option>
-				<option value="19"> Lisk  </option>
-				<option value="20">Bytecoin  </option>
-				<option value="21"> Stellar Lumens </option>
-				<option value="22">BitShares  </option>
-				<option value="23">Peercoin  </option>
-				<option value="24"> Siacoin  </option>
-				<option value="25">Creditbit  </option>
-				<option value="26"> Emercoin </option>
-				<option value="27">Komodo </option>
-				<option value="28">  Nxt </option>
-				<option value="29"> ZCoin </option>
-				<option value="30">  Nexus </option>
-				<option value="31">SysCoin</option>
-				<option value="32"> Namecoin </option>
-				<option value="33"> Bitcrystals </option>
-				<option value="34">Gulden  </option>
-				<option value="35"> Byteball  </option>
-				<option value="36">ShadowCash  </option>
-				<option value="37"> BitcoinDark </option>
-				<option value="38">  AntShares </option>
-				<option value="39"> Counterparty </option>
-				<option value="40">  I/O Coin </option>
-				<option value="41">  PotCoin </option>
-				<option value="42">Ark  </option>
-				<option value="43"> Rubycoin </option>
-				<option value="44"> DigiByte </option>
-				<option value="45">Nexium  </option>
-				<option value="46"> BlackCoin </option>
-				<option value="47">NAV Coin  </option>
-				<option value="48">BelaCoin  </option>
-				<option value="49"> Ubiq </option>
-				<option value="50"> YbCoin </option>
-				<option value="51"> BitBay  </option>
-				<option value="52"> ArcticCoin </option>
-				<option value="53"> GridCoin </option>
-				<option value="54"> Novacoin </option>
-				<option value="55">  Viacoin </option>
-				<option value="56"> LBRY Credits </option>
-				<option value="57"> Golem </option>
-				<option value="58"> iEx.ec</option>
-				<option value="59"> Trustcoin</option>
-				<option value="60"> Token</option>
-				<option value="61"> Wings</option>
-				<option value="62"> Pink Coin</option>
-				<option value="63"> Ardor</option>
-				<option value="64"> StorjX</option>
-				<option value="65"> Verge</option>
-				<option value="66"> DigitalNote</option>
-				<option value="67"> BasicAttentionToken</option>
-				<option value="69"> Myriad</option>
-				<option value="70"> Florin</option>
-				<option value="71"> DracoToken</option>
-				<option value="72"> SingularDtv</option>
-				<option value="73"> ReddCoin</option>
-				<option value="74"> MaidSafeCoin</option>
-				<option value="75"> PrimeCoin</option>
-
-				
 
 		</select>
 		<br><br>
-		
-		
-	<br><br>
-	
 		</div>
+		&nbsp;
 	
 	<div id="tableButton" style="width: 80%; float:right">
 		<table id="valueTable">
@@ -133,13 +52,33 @@
 		</div>
 		<br>
 		<div id="lineChart"></div>
-		<p>For feature request,comments or bugs: Fact0reallc@gmail.com &copy;Fact0reallc, 2017,</p>
+		<p>For feature request,comments or bugs: Fact0reallc@gmail.com &copy;Fact0reallc, 2017</p>
+		<div align="center">
+		<div style="display: inline-block; vertical-align:top; padding-top: 10px;">
+		<img src="coffee.png"  height="20" width="20"> tip : &nbsp;
+		</div>
+		
+		<div id="btc" style="display: inline-block">
+		<img src="bitcoin.png" alt="donate_BTC" height="42" width="42">
+		</div>
+		
+		<div id="eth" style="display: inline-block">
+		<img src="ethereum.png" alt="donate_ETH" height="42" width="42">
+		</div>
+		
+		<div id="ethc" style="display: inline-block">
+		<img src="ethereumClassic.png" alt="donate_ETHC" height="42" width="42">
+		</div>
+		<br>
+		<div id="walletAddress" style="background-color:grey; font-size:13px; display: inline-block"></div>
+		
+		</div>
+		
+		
 		</div>
 	
 	
 	
 </div>
-
->
 </body>
 </html>

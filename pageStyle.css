@@ -1,9 +1,9 @@
 
 body {
     min-width:600px;
-	background-color:black;
+	background-color:azure;
 	.textTop{
-		color: chocolate;
+		color: #983E98;
 		font-size: 9;
 	}
 	}
@@ -41,9 +41,9 @@ body {
    }	
 	
 
-h1   {color: #ad7140;
+h1   {color: black;
 	text-align: center;}
-p    {color: chocolate;
+p    {color: black;
 	text-align: center;
 	font-size: 14px;
 	font-family: sans-serif;}
