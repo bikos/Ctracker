@@ -117,4 +117,14 @@ table tr.even td {
 }
 table tr:last-child td {
 	border-bottom:0;
-}	
+}
+
+a {
+    color: #000; /* or whatever colour you prefer - you may also use inherit */
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.my_class{
+	color : 00ff00;
+}

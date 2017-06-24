@@ -9,20 +9,70 @@
 <script src="popup.js"></script>
 <script src="fusioncharts.js"></script>
 <script src="fusioncharts-jquery-plugin.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+<script src="datatable.js"></script>
 </head>
 <body  style="height:420px; width:770px">
 <div>
 	<h1>Crypto Currency Tracker</h1>
-	<div style="width: 20%; float:left">
+	<div style="width: 18%; float:left;margin:3px;">
 		<h4>Select Currency:</h4>
 			<select id="myselect" style="width: 100%">
 				<option selected="" disabled="">Select option</option>
 
 		</select>
 		<br><br>
-		</div>
-		&nbsp;
+		<button class="button" id="topLow">Top/Low coins</button>
+		<button id="liveTable" style="margin-top: 10px;width=150px" class="button" >Live Table</button>
+	</div>
 	
+		
+	<div id="popupTable" style="width: 78%; float:left">
+	
+	<table id="fullTable"  align="left" class="display" cellspacing="0" width="100%"> 
+	        <thead>
+            <tr>
+				<th>ID</th>
+                
+                <th>Name</th>
+                <th>Price USD</th>
+				<th>Volume</th>
+                <th>1h Change</th>
+                <th>24h Change</th>
+                <th>7d Change</th>
+            </tr>
+        </thead>
+        
+	 </table>
+	
+	<table id="top10"  align="left" border="1" cellspacing="0" cellpadding="0" style="clear:both;layout:fixed;width:260px;" >
+	<caption>Top 5 Gainers 24h</caption>
+    <thead>
+	<tr>
+	<th>Id:</th>
+	<th>Name:</th>
+	<th>24hrChange:</th>
+	</tr>
+	</thead>
+		<tbody>
+		</tbody>
+	</table>
+		
+	<table id="losers10"  align="right" border="1" cellspacing="0" cellpadding="0" style="clear:both;layout:fixed;width:260px;" >
+	<caption>Top 5 Losers 24h</caption>
+    <thead>
+	<tr>
+	<th>Id:</th>
+	<th>Name:</th>
+	<th>24hrChange:</th>
+	</tr>
+	</thead>
+		<tbody>
+		</tbody>
+	</table>
+	</div>
+	
+		
 	<div id="tableButton" style="width: 80%; float:right">
 		<table id="valueTable">
 		<tr>

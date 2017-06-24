@@ -659,12 +659,137 @@ function fetchValues(fetchUrl) {
 	});
 }
 
-$(document).ready(function () {
+function drawTopValues(rowVal){
+		for (var i = 1; i < rowVal ; i ++){
+		var first = '#td'+i+'1';
+		var second = '#td'+i+'2';
+		var loseFirst = '#td'+i+'1l';
+		var lostSecond = '#td'+i+'2l';
+		var load1String = 'http://coinmarketcap.com/gainers-losers/ #gainers-24h .table tbody tr:nth-child(' + i +') td:nth-child(2)';
+		var load2String = 'http://coinmarketcap.com/gainers-losers/ #gainers-24h .table tbody tr:nth-child(' + i +') td:nth-child(6)';
+		var load1StringLose = 'http://coinmarketcap.com/gainers-losers/ #losers-24h .table tbody tr:nth-child(' + i +') td:nth-child(2)';
+		var load2StringLose = 'http://coinmarketcap.com/gainers-losers/ #losers-24h .table tbody tr:nth-child(' + i +') td:nth-child(6)';
+		//console.log($(first).load(load1String));
+		$(first).load(load1String);
+		$(second).load(load2String);
+		$(loseFirst).load(load1StringLose);
+		$(lostSecond).load(load2StringLose);
+		}
+	
+		$('#top10').DataTable({
+			"paging":   false,
+		   "ordering": false,
+			"info":     false,
+			"bFilter": false,
+			"columnDefs": [
+    { "width": "20%", "targets": 1 }
+  ]
+			
+		});
+		
+		$('#losers10').DataTable({
+		"paging":   false,
+       "ordering": false,
+        "info":     false,
+		"bFilter": false,
+		"columnDefs": [
+    { "width": "20%", "targets": 1 }
+  ]
+	});
+		
+	$('#top10_wrapper').removeClass();
+	$('#losers10_wrapper').removeClass();
+	$('#top10_wrapper').css({float:"left", width:"50%"});
+	$('#losers10_wrapper').css({float:"left", width:"45%"});
 
+	}
+	
+	function createTable(rowVal){
+		for(var i = 1 ; i < rowVal ; i++){
+		var htmlEdit1 = "<tr id=\"trl"+i+"\"><td>"+i+"</td><td id=\"td"+i+"1l\" ></td><td id=\"td"+i+"2l\"></td></tr>";
+		var htmlEdit2 = "<tr id=\"tr"+i+"\"><td>"+i+"</td><td id=\"td"+i+"1\" ></td><td id=\"td"+i+"2\"></td></tr>";
+		$('#losers10 >tbody:last-child').append(htmlEdit1);
+		$('#top10    >tbody:last-child').append(htmlEdit2);
+		
+		//$('#myTable > tbody:last-child').append(htmlEdit);
+		}
+		
+		drawTopValues(rowVal);
+		
+	}
+	function drawFulltable(){
+		$('#fullTable').DataTable( {
+		"processing": true,
+        "ajax": {"url":"https://api.coinmarketcap.com/v1/ticker/","dataSrc":""},
+		"pagingType": "simple",
+		"info":     false,
+        "columns": [
+			{ "data": "rank" },
+			{ "data": "name" },
+            { "data": "price_usd" },
+			{"data": "24h_volume_usd"},
+            { "data": "percent_change_1h" },
+            { "data": "percent_change_24h" },
+            { "data": "percent_change_7d" },
+			
+        ],
+		
+		
+		"initComplete": function(settings, json) {
+			$('#fullTable tr td').each(function () {
+		
+			
+			if($(this).text() < 0)$(this).css('color', '#ed5e25');
+			//if($(this).text() > 1)
+		});
+		  }
+		
+    } );
+		$('#fullTable_paginate').hide();
+		
+		
+		//if($(this).text() > 1)$(this).css('background-color','green');
+		//if($(this).text() < 1)$(this).css('background-color','red');
+		
+	}
+
+$(document).ready(function () {
+	
+	//$('#top10 tbody').load('http://coinmarketcap.com/gainers-losers/ #gainers-24h .table tbody tr:lt(5)');
+	
+	drawFulltable();
+	createTable(6);
+	
 	fetchNameDropDowns();
 	$("#lineChart").hide();
 	$('#myselect').select2();
 	$("#tableButton").hide();
+	$('#fullTable').show();
+	$("#top10").hide();
+	$("#losers10").hide();
+	
+	
+	$('#topLow').click(function() {
+		$("#tableButton").hide();
+		$('#popupTable').show();
+		$("#top10").show();
+		$("#losers10").show();
+		$('#fullTable').hide();
+		$('#fullTable_wrapper').hide();
+		
+	});
+	
+	
+	$('#liveTable').click(function() {
+		$("#tableButton").hide();
+		$('#popupTable').show();
+		$("#top10").hide();
+		$("#losers10").hide();
+		$('#fullTable').show();
+		$('#fullTable_wrapper').show();
+		
+		
+	});
 	
 	$('#btc').click(function() {
 	$('#walletAddress').html('1A5XgYvDpAetcPuzntAdn2HqNawF8Yv4FH');
@@ -681,6 +806,8 @@ $(document).ready(function () {
 	
 	jQuery('#myselect').on('change', (function () {
 		//var value = $(this).val();
+		
+		$('#popupTable').hide();
 		
 		var value =$('#myselect').val();
 		drawValues(value);
