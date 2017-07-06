@@ -756,9 +756,10 @@ function drawTopValues(rowVal){
 $(document).ready(function () {
 	
 	//$('#top10 tbody').load('http://coinmarketcap.com/gainers-losers/ #gainers-24h .table tbody tr:lt(5)');
-	
-	drawFulltable();
-	createTable(6);
+    
+   
+
+    var tableClicked = false;
 	
 	fetchNameDropDowns();
 	$("#lineChart").hide();
@@ -766,7 +767,18 @@ $(document).ready(function () {
 	$("#tableButton").hide();
 	$('#fullTable').show();
 	$("#top10").hide();
-	$("#losers10").hide();
+    $("#losers10").hide();
+
+
+    $("#tableButton").hide();
+    $('#popupTable').show();
+    $("#top10").show();
+    $("#losers10").show();
+    $('#fullTable').hide();
+    $('#fullTable_wrapper').hide();
+    createTable(6);
+
+
 	
 	
 	$('#topLow').click(function() {
@@ -780,7 +792,11 @@ $(document).ready(function () {
 	});
 	
 	
-	$('#liveTable').click(function() {
+    $('#liveTable').click(function () {
+        if (!tableClicked) {
+            drawFulltable();
+        }
+        tableClicked = true;
 		$("#tableButton").hide();
 		$('#popupTable').show();
 		$("#top10").hide();
