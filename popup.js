@@ -733,6 +733,13 @@ function drawTopValues(rowVal){
             { "data": "percent_change_7d" },
 			
         ],
+		lengthMenu: [
+            [ 100, 25, 50, -1 ],
+            [ '100 ', '25 ', '50 ', 'Show all' ]
+        ],
+        buttons: [
+            'pageLength'
+        ],
 		
 		
 		"initComplete": function(settings, json) {
@@ -740,7 +747,7 @@ function drawTopValues(rowVal){
 		
 			
 			if($(this).text() < 0)$(this).css('color', '#ed5e25');
-			//if($(this).text() > 1)
+			//else if($(this).text() > 0)$(this).css('color', '#ed5e25');
 		});
 		  }
 		
